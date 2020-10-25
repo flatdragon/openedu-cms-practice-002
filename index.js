@@ -13,7 +13,7 @@ require('http').Server((req, res) => {
   }
 
   if (req.url === '/sample/') {
-    const task = function (x) {
+    function task(x) {
       const sqrt = this ** 2
       return x * sqrt
     }
